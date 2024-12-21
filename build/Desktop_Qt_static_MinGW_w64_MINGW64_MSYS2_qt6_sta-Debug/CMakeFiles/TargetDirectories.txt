@@ -1,0 +1,6 @@
+D:/Projects/Qt/qtcmake/build/Desktop_Qt_static_MinGW_w64_MINGW64_MSYS2_qt6_sta-Debug/CMakeFiles/QtNodes.dir
+D:/Projects/Qt/qtcmake/build/Desktop_Qt_static_MinGW_w64_MINGW64_MSYS2_qt6_sta-Debug/CMakeFiles/test.dir
+D:/Projects/Qt/qtcmake/build/Desktop_Qt_static_MinGW_w64_MINGW64_MSYS2_qt6_sta-Debug/CMakeFiles/edit_cache.dir
+D:/Projects/Qt/qtcmake/build/Desktop_Qt_static_MinGW_w64_MINGW64_MSYS2_qt6_sta-Debug/CMakeFiles/rebuild_cache.dir
+D:/Projects/Qt/qtcmake/build/Desktop_Qt_static_MinGW_w64_MINGW64_MSYS2_qt6_sta-Debug/CMakeFiles/QtNodes_autogen_timestamp_deps.dir
+D:/Projects/Qt/qtcmake/build/Desktop_Qt_static_MinGW_w64_MINGW64_MSYS2_qt6_sta-Debug/CMakeFiles/QtNodes_autogen.dir

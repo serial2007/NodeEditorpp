@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "QtNodesLibrary",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "QtNodes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtNodes-Debug-1593ee7fb948c508c95c.json",
+					"name" : "QtNodes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtNodes_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtNodes_autogen-Debug-7f65ae30032f0d2cb6a7.json",
+					"name" : "QtNodes_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtNodes_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtNodes_autogen_timestamp_deps-Debug-b664778f9f709ad043bf.json",
+					"name" : "QtNodes_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Projects/Qt/qtcmake/build/Desktop_Qt_static_MinGW_w64_MINGW64_MSYS2_qt6_sta-Debug",
+		"source" : "D:/Projects/Qt/qtcmake"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
