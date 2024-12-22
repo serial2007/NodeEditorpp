@@ -30,7 +30,7 @@ private:
         auto n1 = din1.lock();
 
         if (n0 && n1) {
-            dout = std::make_shared<FxData>();
+            dout = std::make_shared<FxData>(n0->number()+n1->number());
         } else {
             dout.reset();
         }
@@ -64,7 +64,9 @@ public:
     }
 
     std::shared_ptr<NodeData> outData(PortIndex const port) override {
-        return dout;
+        if (port == 0)
+            return dout;
+        return std::shared_ptr<NodeData>();
     }
 
     QWidget *embeddedWidget() override {

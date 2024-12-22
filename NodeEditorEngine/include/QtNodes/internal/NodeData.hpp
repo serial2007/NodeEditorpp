@@ -36,6 +36,8 @@ public:
 
     /// Type for inner use
     virtual NodeDataType type() const = 0;
+    virtual QString toString() const = 0;
+    virtual void fromString(QString) = 0;
 };
 
 } // namespace QtNodes

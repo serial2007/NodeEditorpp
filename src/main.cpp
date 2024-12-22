@@ -23,6 +23,8 @@
 #include "NumberSourceDataModel.hpp"
 
 #include "FxExample.hpp"
+#include "FxDataSource.hpp"
+#include "FxDataDisplay.hpp"
 
 using QtNodes::ConnectionStyle;
 using QtNodes::DataFlowGraphicsScene;
@@ -35,7 +37,10 @@ static std::shared_ptr<NodeDelegateModelRegistry> registerDataModels()
     auto ret = std::make_shared<NodeDelegateModelRegistry>();
     ret->registerModel<NumberSourceDataModel>("Sources");
     ret->registerModel<NumberDisplayDataModel>("Displays");
+
+    ret->registerModel<FxSourceModel>("Sources");
     ret->registerModel<FxExampleModel>("Operators");
+    ret->registerModel<FxDisplayModel>("Displays");
 
     ret->registerModel<NumberSourceDataModel>("Sources");
     ret->registerModel<NumberDisplayDataModel>("Displays");

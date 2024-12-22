@@ -44,7 +44,7 @@ void NumberDisplayDataModel::setInData(std::shared_ptr<NodeData> data, PortIndex
         return;
 
     if (_numberData) {
-        _label->setText(_numberData->numberAsText());
+        _label->setText(_numberData->toString());
     } else {
         _label->clear();
     }

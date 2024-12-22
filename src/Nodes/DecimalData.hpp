@@ -11,19 +11,23 @@ class DecimalData : public NodeData
 {
 public:
     DecimalData()
-        : _number(0.0)
+        : _data(0.0)
     {}
 
     DecimalData(double const number)
-        : _number(number)
+        : _data(number)
     {}
 
     NodeDataType type() const override { return NodeDataType{"decimal", "Decimal"}; }
 
-    double number() const { return _number; }
+    double number() const { return _data; }
 
-    QString numberAsText() const { return QString::number(_number, 'f'); }
-
+    QString toString() const override{
+        return QString::number(_data, 'f');
+    }
+    void fromString(QString st) override{
+        this->_data = st.toDouble();
+    }
 private:
-    double _number;
+    double _data;
 };

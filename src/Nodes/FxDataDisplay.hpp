@@ -3,8 +3,8 @@
 #include <QtNodes/NodeDelegateModel>
 
 #include <QtCore/QObject>
+
 #include "FxData.hpp"
-#include <iostream>
 
 using QtNodes::NodeData;
 using QtNodes::NodeDataType;
@@ -12,30 +12,25 @@ using QtNodes::NodeDelegateModel;
 using QtNodes::PortIndex;
 using QtNodes::PortType;
 
-class QLineEdit;
+class QLabel;
 
 /// The model dictates the number of inputs and outputs for the Node.
 /// In this example it has no logic.
-class FxSourceModel: public NodeDelegateModel
+class FxDisplayModel : public NodeDelegateModel
 {
     Q_OBJECT
 
 public:
-    FxSourceModel();
+    FxDisplayModel();
 
-    virtual ~FxSourceModel() {}
+    ~FxDisplayModel() = default;
 
 public:
-    QString caption() const override { return QStringLiteral("FxSourceModel"); }
+    QString caption() const override { return QStringLiteral("FxResult"); }
 
     bool captionVisible() const override { return false; }
 
-    QString name() const override { return QStringLiteral("FxSourceModel"); }
-
-public:
-    QJsonObject save() const override;
-
-    void load(QJsonObject const &p) override;
+    QString name() const override { return QStringLiteral("FxResult"); }
 
 public:
     unsigned int nPorts(PortType portType) const override;
@@ -44,19 +39,14 @@ public:
 
     std::shared_ptr<NodeData> outData(PortIndex port) override;
 
-    void setInData(std::shared_ptr<NodeData>, PortIndex) override {}
+    void setInData(std::shared_ptr<NodeData> data, PortIndex portIndex) override;
 
     QWidget *embeddedWidget() override;
 
-public:
-    void setData(uint64_t data);
-
-private Q_SLOTS:
-
-    void onTextEdited(QString const &string);
+    uint64_t data() const;
 
 private:
     std::shared_ptr<FxData> _data;
 
-    QLineEdit *_lineEdit;
+    QLabel *_label;
 };

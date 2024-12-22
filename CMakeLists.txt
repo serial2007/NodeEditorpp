@@ -169,7 +169,9 @@ add_executable(QtNodes
   ${HPP_HEADER_FILES}
   ${RESOURCES}
   src/Nodes/FxDataSource.cpp
-  src/Nodes/FxDataset.hpp
+  src/Nodes/FxDataDisplay.hpp
+  src/Nodes/FxDataDisplay.cpp
+
 
 )
 
