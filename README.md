@@ -3,4 +3,6 @@
 
 by：吴亦璋，陈相印
 
-平台：Qtcreator
+平台：Windows、
+
+工具：Qtcreator
