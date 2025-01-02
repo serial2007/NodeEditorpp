@@ -98,7 +98,7 @@ set(CPP_SOURCE_FILES
 
   #user main
 
-  src/main._cpp
+
   src/Nodes/MathOperationDataModel.cpp
   src/Nodes/NumberDisplayDataModel.cpp
   src/Nodes/NumberSourceDataModel.cpp
@@ -159,7 +159,7 @@ set(HPP_HEADER_FILES
   src/Nodes/FxBaseModel.cpp
   src/Nodes/FxDataSource.hpp
 
-  src/main.cpp
+
 )
 
 # If we want to give the option to build a static library,
@@ -171,6 +171,7 @@ add_executable(QtNodes
   src/Nodes/FxDataSource.cpp
   src/Nodes/FxDataDisplay.hpp
   src/Nodes/FxDataDisplay.cpp
+  src/main.cpp
 
 
 )
